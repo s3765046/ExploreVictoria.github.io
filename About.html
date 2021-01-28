@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>About</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+
+      body {
+        font-family: Arial;
+        padding: 60px;
+        background: #b3d1ff;
+      }
+
+
+      /* Title */
+      .header {
+        background-color: #e6f0ff;
+        padding: 100px;
+        text-align: center;
+        background: black;
+        color: white;
+      }
+
+  /* Header background*/
+      .header {
+        background-image: url(https://images.unsplash.com/photo-1578233798150-8c57db903cda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+        background-position: 32% 32%;
+        background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+      }
+
+
+
+  h1 {
+  font-size: 50px;
+  text-align: center;
+  }
+
+   /* About me */
+  div.first {background-color: #e6f0ff;
+  padding: 40px;
+
+  }
+
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  }
+  /* sticky navigation bar */
+  #navbar {
+  overflow: hidden;
+  background-color: #ffffff;
+   opacity: 0.9;
+  }
+
+  #navbar a {
+  float: left;
+  display: block;
+  color:  #001f4d;
+  text-align: center;
+  padding: 35px 35px;
+  text-decoration: none;
+  font-size: 17px;
+  }
+
+  #navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  }
+
+
+  .content {
+  padding: 16px;
+  }
+
+  .sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  }
+
+  .sticky + .content {
+  padding-top: 100px;
+  }
+
+  /* Linked symbol */
+  .fa-linkedin {
+        background: #007bb5;
+        color: white;
+        height: 75px;
+      }
+
+
+  /* Footer*/
+  .footer {
+        background-image: url(https://thumbs.gfycat.com/SmugHeavyDuiker-size_restricted.gif);
+        background-position: 50% 50%;
+       
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+        padding: 10px;
+        text-align: center;
+      
+        margin-top: 10px;
+      }
+
+  /* Responsive layout 1 */
+  @media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  }
+
+  /* Responsive layout 2 */
+  @media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+  }
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Explore Victoria</h1>
+    <p>Exploring the rich diversity and beauty of regional Victoria: Mapping tourist destinations in Victoria.</p>
+  </div>
+  <div id="navbar">
+    <a href="index.html">☞ Home</a> <a href="Interactivemap.html">☞ Check the Webmap<br></a> <a href="Dashboard.html">☞ Check the Dashboard</a> <a href="Survey.html">☞ Check the Survey</a> <img src="https://live.staticflickr.com/65535/50249909263_3502c6a51c_m.jpg" style="float:right; height:100px;" title="Website Logo" alt="explore Victria"><br>
+  </div>
+  <script>
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+  }
+  </script>
+  <div class="first">
+    <h1>About Me</h1>
+    <img src="https://live.staticflickr.com/65535/50244672181_0838ba5669_o.jpg" class="center" style="width:40%;" title="That's me!" alt="50244672181_0838ba5669_o">
+    <br>
+    <br>
+    <p style="color: navy;">I am Lakshay Gupta,aspiring to become a researcher with a Masters focused in geospatial science from RMIT University.<br>
+    <br>
+    I have always been passionate in reading about the know-how of latest technology.Three years of graduation in Geography made me aware of my surroundings and helped me understand my areas of interest in the field. In order to enhance my skill set further, I also took up an Internship during my summer break at Parajit Industries and Anand Foundation. While working at these organizations, I was able to enhance my knowledge base to a great extent.<br>
+    <br>
+    Once, I complete my post-graduation I plan on returning to my home country and will work here as a professional in my relevant field. I intend on completing my Masters with flying colours and will leave no stone unturned in accomplishing the same.</p><br>
+    <br>
+    <p>Melbourne, Australia</p>
+    <p>Phone: +61 0449663167</p>
+    <p>Email: s3765046@student.rmit.edu.au</p>
+  </div>
+  <div class="footer">
+    <a href="https://www.rmit.edu.au/news/all-news/2017/mar/tell-me-about-geospatial-science"><img alt="tell-me-about-geospatial-science" src="https://upload.wikimedia.org/wikipedia/commons/5/51/RMIT_University_Logo.svg" style="float:right; width: 150px; height:100px;"></a> <img src="https://live.staticflickr.com/65535/50249909263_3502c6a51c_m.jpg" style="width:15%;" title="Website Logo" alt="explore Victria"> <a href="https://www.linkedin.com/in/lakshaygupta24/" style="float:left; width: 100px; height:100px;" class="fa fa-linkedin"></a>
+  </div>
+  <footer>
+    <p>Author: Lakshay Gupta<br>
+    <a href="mailto:s3765046@student.rmit.edu.au">s3765046@student.rmit.edu.au</a></p>
+  </footer><br>
+  <br>
+  <br>
+</body>
+</html>
