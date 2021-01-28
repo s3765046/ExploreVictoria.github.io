@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>DM PROJECT Explore :Lakshay Gupta, S3765046</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+        /* Box */
+
+  * {  box-sizing: border-box;   }
+
+
+      body {
+        font-family: Adobe Devanagari;
+        padding: 5px;
+        background:#b3d1ff;
+      }
+
+      /* Title */
+      .header {
+        padding: 100px;
+        text-align: center;
+        background: black;
+        color: white;
+      }
+
+  /* Header background */
+      .header {
+        background-image: url(https://images.unsplash.com/photo-1578233798150-8c57db903cda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+        background-position: 32% 32%;
+        background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 80px;
+      }
+
+
+  .header h1 {
+  font-size: 40px;
+  }
+
+  /* sticky navigation bar */
+  #navbar {
+  overflow: hidden;
+  background-color: #ffffff;
+  opacity: 0.9;
+  }
+
+  #navbar a {
+  float: left;
+  display: block;
+  color:  #001f4d;
+  text-align: center;
+  padding: 35px 35px;
+  text-decoration: none;
+  font-size: 17px;
+  }
+
+  #navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  }
+
+
+  .content {
+  padding: 16px;
+  }
+
+  .sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  }
+
+  .sticky + .content {
+  padding-top: 100px;
+  }
+  /* footer */
+  .footer {
+  font-size: 16px;
+        background-image: url(https://thumbs.gfycat.com/SmugHeavyDuiker-size_restricted.gif);
+        background-position: 50% 50%;
+       
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+        padding: 30px;
+        text-align: center;
+      
+        margin-top: 5px;
+        width:100%;
+      }
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  }
+
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+  }
+
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <h1>Explore Victoria</h1>
+    <p>Exploring the rich diversity and beauty of regional Victoria: Mapping tourist destinations in Victoria.</p>
+  </div><!-- Navigation bar -->
+  <div id="navbar">
+    <a href="index.html">☞ Home ⌂<br></a> <a href="Interactivemap.html">☞ Check the webmap</a>  <a href="Dashboard.html">☞ Check the Dashboard</a> <a href="About.html">☞ About</a> <img src="https://live.staticflickr.com/65535/50249909263_3502c6a51c_m.jpg" style="float:right; height:100px;" title="Website Logo" alt="explore Victria"><br>
+  </div><!-- Navigation bar script -->
+  <script>
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+  }
+
+  </script> <iframe src="https://arcg.is/bWz5" width="100%" height="1000" style="padding: 10px;" title="Explore Victoria Dashboard"></iframe> <!-- Footer -->
+  <div class="footer">
+    <h1 style="color:white; border: 5px solid white;padding: 3%">“THE WORLD IS A BOOK AND THOSE WHO DO NOT TRAVEL READ ONLY A PAGE.”</h1><br>
+    <a href="https://www.rmit.edu.au/news/all-news/2017/mar/tell-me-about-geospatial-science"><img alt="tell-me-about-geospatial-science" src="https://upload.wikimedia.org/wikipedia/commons/5/51/RMIT_University_Logo.svg" style="width: 20%;">
+    <p style="color:white;">Author: Lakshay Gupta</p></a><a href="mailto:s3765046@student.rmit.edu.au">Email me</a>
+  </div>
+</body>
+</html>
